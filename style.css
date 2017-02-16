@@ -1,0 +1,229 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-image: url('topgradient.jpg');
+	background-repeat: repeat-x;
+	overflow-x: hidden;
+	margin: 0px;
+	font-family: opensanssemibold;
+}
+
+@font-face {
+    font-family: opensanssemibold;
+    src: url(OpenSans-Semibold_0.ttf);
+}
+
+#toppattern {
+	height: 89px;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	background-image: url('toppattern.png');
+	background-repeat: repeat-x;
+}
+
+#bgpattern {
+	width: 100%;
+	height: 683px;
+	position: absolute;
+	left: -20px;
+	top:  75px;
+	background-image:  url('bgpattern.png');
+	background-repeat: repeat-x;
+	z-index: -1;
+}
+
+#bottomgradient {
+	height: 654px;
+	width: 100%;
+	bottom: 0px;
+	
+    margin-top: -653px;
+	background-image: url('bottomgradient.png');
+	background-repeat: repeat-x;
+}
+
+#bottompattern {
+	height: 115px;
+    width: 100%;
+    z-index: 10;
+    bottom: 0px;
+    background-image: url(bottompattern.png);
+    background-repeat: repeat-x;
+    position: relative;
+
+}
+
+
+#wrapper {
+	width: 90%;
+	
+	margin: 100px auto 0px auto;
+	
+	max-width: 1052px;
+	height: auto;
+	z-index:  99;
+}
+
+#photo {
+	height: 162px;
+	width: 162px;
+	border-radius: 999px;
+	border: 7px solid rgba(255,255,255,0.3);
+	margin: 195px auto 0 auto;
+}
+
+#heading {
+	width: 90%;
+	max-width:  660px;
+	height: auto;
+	margin: 50px auto 0 auto;
+}
+
+
+#about-me {
+	width: 80%;
+	max-width: 480px;
+	margin: 180px auto 0 auto;
+	text-align: center;
+}
+
+
+#brands {
+	width: 80%;
+	max-width: 694px;
+	height: auto;
+	margin: 170px auto 0 auto; 
+	display: block;
+}
+
+
+#brands-mobile {
+	width: 80%;
+	max-width: 383px;
+	height: auto;
+	margin: 170px auto 0 auto; 
+	display: none;
+}
+
+h1 {
+	 text-transform: uppercase;
+	 letter-spacing: 2px;
+	font-size:  18px;
+	color: #cc31f6;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 40px;
+	
+}
+
+
+#mywork {
+	margin: 175px auto 0 auto;
+	width: 100%;
+	max-width: 1052px;
+	height: auto;
+	overflow: auto;
+}
+
+.workexample {
+	width: 307px;
+	height: 395px;
+	float: left;
+	position: relative;
+	margin: 19px 19px 19px 19px;
+}
+
+.workphoto {
+	width: 307px;
+	height: 222px;
+}
+
+.workphoto:hover {
+	cursor: pointer;
+}
+
+.worktext {
+	text-align: center;
+	color: #49444b;
+	font-size: 17px;
+	margin-top: 39px;
+}
+
+#contact {
+	width: 338px;
+	height: 175px;
+	margin: 208px auto 82px auto;
+}
+
+#contact:hover {
+	cursor: pointer;
+}
+
+
+#emailshow {
+	display: none;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	cursor: text;
+}
+
+
+#backbutton {
+	 text-transform: uppercase;
+	 letter-spacing: 2px;
+	font-size:  18px;
+	color: #cc31f6;
+	font-weight: bold;
+}
+
+
+
+/*-----Mobile---------*/
+
+@media screen and (max-width: 590px) {
+    #brands {
+	display: none;
+	}
+	
+	#brands-mobile {
+		display: block;
+	}
+	
+	
+}
+
+
+@media screen and (max-width: 500px) {
+	#photo {
+		height: 130px;
+	width: 130px;
+	margin: 70px auto 0 auto;
+	}
+}
+
+
+@media screen and (max-width: 1166px) {
+    
+	#mywork {
+
+	width: 90%;
+	max-width: 690px;
+}
+	
+}
+
+@media screen and (max-width: 868px) {
+    
+	#mywork {
+
+	width: 90%;
+	max-width: 357px;
+}
+	
+}
+
+
+
